@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Aniversário, Chonil ❤️</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: linear-gradient(180deg, #ffb6c1, #ff69b4, #dc143c, #8b0000);
+    background-attachment: fixed;
+    overflow-x: hidden;
+    color: #fff;
+    position: relative;
+  }
+
+  #hearts-canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .heart {
+    position: fixed;
+    top: -10%;
+    font-size: 24px;
+    color: rgba(255,255,255,0.85);
+    user-select: none;
+    z-index: 1;
+    animation: fall linear infinite;
+    text-shadow: 0 0 8px rgba(255,105,180,0.8);
+  }
+
+  @keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+  }
+
+  header {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 90px 20px 60px;
+  }
+
+  header h1 {
+    font-size: clamp(2rem, 6vw, 3.8rem);
+    text-shadow: 0 0 20px rgba(255,255,255,0.6), 0 4px 12px rgba(139,0,0,0.5);
+    letter-spacing: 1px;
+    animation: pulse 2.2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+  }
+
+  header p {
+    margin-top: 18px;
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0.95;
+  }
+
+  .scroll-hint {
+    margin-top: 40px;
+    font-size: 0.95rem;
+    opacity: 0.85;
+    animation: bounce 1.6s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+  }
+
+  main {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px 140px;
+  }
+
+  .msg {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 20px;
+    padding: 34px 30px;
+    margin: 90px 0;
+    box-shadow: 0 10px 30px rgba(139,0,0,0.35);
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .msg.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .msg h2 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+    color: #fff0f5;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+  }
+
+  .msg p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .msg .icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 60px 24px 100px;
+  }
+
+  footer .signature {
+    font-size: 1.6rem;
+    font-style: italic;
+    text-shadow: 0 0 16px rgba(255,255,255,0.6);
+  }
+
+  footer .small {
+    margin-top: 14px;
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+
+<div id="hearts-canvas"></div>
+
+<header>
+  <h1>Feliz Aniversário, minha ESPOSA "Chonil" 💖</h1>
+  <p>A mulher mais linda do mundo... e o amor da minha vida.</p>
+  <div class="scroll-hint">↓ desce devagar e sente cada palavra ↓</div>
+</header>
+
+<main>
+  <div class="msg">
+    <span class="icon">🌹</span>
+    <h2>O teu sorriso</h2>
+    <p>Cada vez que sorris, o mundo à minha volta fica mais bonito. O teu sorriso é o meu lugar favorito no universo inteiro.</p>
+  </div>
+
+  <div class="msg">
+    <span class="icon">✨</span>
+    <h2>A tua beleza</h2>
+    <p>Não é só o que os olhos veem, Chonil. É a forma como cuidas de quem amas, como és forte mesmo nos dias difíceis, como fazes tudo parecer mais leve. Isso é que te torna, de longe, a mais linda.</p>
+  </div>
+
+  <div class="msg">
+    <span class="icon">💌</span>
+    <h2>Continua a descer...</h2>
+    <p>Ainda tenho mais para te dizer. Cada palavra aqui é verdadeira, escrita a pensar só em ti.</p>
+  </div>
+
+  <div class="msg">
+    <span class="icon">🔥</span>
+    <h2>O meu amor por ti</h2>
+    <p>Não cabe em mensagens, nem em páginas, nem em palavras. Mas hei-de tentar mostrar-te todos os dias, com cada gesto, com cada "bom dia" e cada "boa noite".</p>
+  </div>
+
+  <div class="msg">
+    <span class="icon">🌙</span>
+    <h2>Quando penso em ti</h2>
+    <p>Penso em construir um futuro ao teu lado. Em rir contigo nos bons dias e abraçar-te nos maus. Tu és o meu porto seguro, Chonil.</p>
+  </div>
+
+  <div class="msg">
+    <span class="icon">💍</span>
+    <h2>A verdade mais profunda</h2>
+    <p>Tu não és só a mulher que eu amo. És a razão pela qual acredito no amor de verdade. Obrigado por existires e por seres minha.</p>
+  </div>
+
+  <div class="msg">
+    <span class="icon">🎂</span>
+    <h2>Neste teu dia</h2>
+    <p>Desejo-te toda a felicidade que mereces, que é muita. Que este novo ano de vida te traga tudo o que sonhas, e que eu possa estar sempre ao teu lado para ver isso acontecer.</p>
+  </div>
+
+  <div class="msg">
+    <span class="icon">💕</span>
+    <h2>Sabe porque considero tuas fotos especiais</h2>
+    <p>Não é uma foto qualquer de uma pessoa qualquer — és tu, és a pessoa com quem estou a construir uma história. Por isso cada foto vira um símbolo do que sinto por ti, de tudo o que já vivemos e do que ainda quero viver..</p>
+  </div>
+
+  <div class="msg">
+    <span class="icon">💍</span>
+    <h2>Qures casar comigo e construir um futuro juntos?</h2>
+    <p>Tu es a mulher que eu quero do meu lado sempre minha KANOJO, a mulher mais linda do mundo mais uma vez feliz Aniversário meu anjo te amo e desenjo tudo de bom.</p>
+  </div>
+</main>
+
+<footer>
+  <p class="signature">Com todo o amor do mundo, para sempre teu amor Paulo.</p>
+  <p class="small">Feliz Aniversário, minha Chonil 💖❤️🌹</p>
+</footer>
+
+<script>
+  // Falling hearts
+  const canvas = document.getElementById('hearts-canvas');
+  const heartSymbols = ['❤️','💖','💕','💗','🌹'];
+  const heartCount = 35;
+
+  for (let i = 0; i < heartCount; i++) {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.textContent = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.fontSize = (16 + Math.random() * 22) + 'px';
+    heart.style.animationDuration = (6 + Math.random() * 8) + 's';
+    heart.style.animationDelay = (Math.random() * 8) + 's';
+    canvas.appendChild(heart);
+  }
+
+  // Reveal messages on scroll
+  const messages = document.querySelectorAll('.msg');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.25 });
+
+  messages.forEach(msg => observer.observe(msg));
+</script>
+
+</body>
+</html>
